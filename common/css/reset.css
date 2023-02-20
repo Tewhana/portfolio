@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/**全てのブラウザーでline heigtを正す
+iOSの縦横向き変更に沿ったフォントサイズの変化を防ぐ。*/
+html {
+ line-height: 1.15;
+ -webkit-text-size-adjust: 100%;
+}
+
+/*セクション別
+  ========================================================================== */
+
+/**全てのブラウザーのmarginを無くす*/
+body {
+ margin: 0;
+}
+
+/**IEにてmainエレメントを変化無くレンダーさせる*/
+main {
+ display: block;
+}
+
+/**Chrome, Firefox, Safariでの'section'と'article'内を正す*/
+h1 {
+ font-size: 2em;
+ margin: 0;
+}
+
+/*グループコンテンツ
+  ========================================================================== */
+
+/**　Firefoxに正しいbox sizeを足す。
+EdgeとIEにてoverflowを表示させる。*/
+hr {
+ box-sizing: content-box;
+ height: 0;
+ overflow: visible;
+}
+
+/**全ブラウザのFontsizeスケーリングと受け継ぎを正す。
+全ブラウザのずれる'em'Fontsizeを正す。*/
+pre {
+ font-family: monospace, monospace;
+ font-size: 1em;
+}
+
+/*テキストレベルのセマンティック
+  ========================================================================== */
+
+/**IE10での稼働リンクの灰色背景を除く*/
+a {
+ background-color: transparent;
+}
+
+/**Chrome57-のBottom borderを除く。
+Chrome, Edge, IE, OperaとSafariに正しいText decoを追加。*/
+abbr[title] {
+ border-bottom: none;
+ text-decoration: underline;
+ text-decoration: underline dotted;
+}
+
+/**Chrome, EdgeとSafariでFont-weightを正す*/
+b,
+strong {
+ font-weight: bolder;
+}
+
+/**全ブラウザのFontsizeスケーリングと受け継ぎを正す。
+全ブラウザのずれる'em'Fontsizeを正す。*/
+code,
+kbd,
+samp {
+ font-family: monospace, monospace;
+ font-size: 1em;
+}
+
+/**全ブラウザのFontsizeを正す*/
+small {
+ font-size: 70%;
+}
+
+/**全ブラウザの'sub''sup'によるLineheightへのお影響を防ぐ*/
+sub,
+sup {
+ font-size: 75%;
+ line-height: 0;
+ position: relative;
+ vertical-align: baseline;
+}
+sub {
+ bottom: -0.25em;
+}
+sup {
+ top: -0.5em;
+}
+
+/*埋め込みコンテンツ
+  ========================================================================== */
+
+/**IE10でLink内Imagesのボーダーを除く*/
+img {
+ border-style: none;
+}
+
+/*フォーム
+  ========================================================================== */
+
+/**全ブラウザのFontstyleを変更。
+FirefoxとSafariのMarginを除く*/
+button,
+input,
+optgroup,
+select,
+textarea {
+ font-family: inherit;
+ font-size: 100%;
+ line-height: 1.15;
+ margin: 0;
+ ;
+}
+
+/**EdgeとIEでOverflowを表示。*/
+button,
+input {
+ overflow: visible;
+}
+
+/**Edge,Firefox,IEでText transformの受け継ぎを除く*/
+button,
+select {
+ text-transform: none;
+}
+
+/**iOSとSafariで融通が効かないクリックできるもののスタイルを正す*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+ -webkit-appearance: button;
+}
+
+/**FirefoxでInner borderとPaddingを除く*/
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+ border-style: none;
+ padding: 0;
+}
+
+/**先ほどのルールでのFocus　Styleを戻す*/
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+ outline: 1px dotted ButtonText;
+}
+
+/**FirefoxのPaddingをなおす*/
+fieldset {
+ padding: 0.35em 0.75em 0.625em;
+}
+
+/**EdgeとIEのText Wrappingを正す。
+IEの’Fieldset’エレメントからの色の受け継ぎを正す。
+全てのブラウザで’Fieldset’をぜろにした時のためにPaddingを除く*/
+legend {
+ box-sizing: border-box;
+ color: inherit;
+ display: table;
+ max-width: 100%;
+ padding: 0;
+ white-space: normal;
+}
+
+/**Chrome FirefoxとOperaのVertical alignmentを正す*/
+progress {
+ vertical-align: baseline;
+}
+
+/**IE10＋のデフォルト縦スクロールバーを除く*/
+textarea {
+ overflow: auto;
+}
+
+/**IE10でBox Sizingを正す。
+IE10のPaddingを除く*/
+[type="checkbox"],
+[type="radio"] {
+ box-sizing: border-box;
+ padding: 0;
+}
+
+/**ChromeのカーサーのIncrement Decrementスタイルを正す*/
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+ height: auto;
+}
+
+/**ChromeとSafariの変なAppearanceを正す。
+SafariのOutlineスタイルを正す*/
+[type="search"] {
+ -webkit-appearance: textfield;
+ outline-offset: -2px;
+}
+
+/**MacOSのChromeとSafariでInner paddingを除く*/
+[type="search"]::-webkit-search-decoration {
+ -webkit-appearance: none;
+}
+
+/**iOSとSafariで融通が効かないクリックできるもののスタイルを正す。
+SafariでFont propertiesを’Inherit’に変える*/
+::-webkit-file-upload-button {
+ -webkit-appearance: button;
+ font: inherit;
+}
+
+/*インタラクティブ
+  ========================================================================== */
+
+/**Edge, IE10+とFirefoxでDisplayを正す*/
+details {
+ display: block;
+}
+
+/**全ブラウザで正しいDisplayを足す*/
+summary {
+ display: list-item;
+}
+
+/*Misc
+  ========================================================================== */
+
+/**IE10+で正しいDisplayを足す*/
+template {
+ display: none;
+}
+
+/**IE10で正しいDisplayを足す*/
+[hidden] {
+ display: none;
+}

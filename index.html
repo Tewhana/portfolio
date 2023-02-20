@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devive-width; initial-scale=1.0;">
+<link rel="stylesheet" href="common/css/style_pc.css">
+<link rel="stylesheet" href="common/css/style_sp.css">
+<link rel="stylesheet" href="common/css/reset.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".burger").click(function() {
+    		$(this).toggleClass('active');
+    		$("ul.menu li").slideToggle('fast');
+		});
+	});
+
+	$(window).resize(function() {
+    	if ($(window).width() > 937) {
+        	$('ul.menu li').removeAttr('style');
+    	};
+	});
+</script>
+<title>Chihiro.Portfolio</title>
+</head>
+
+<body>
+	<header>
+		<div class="index headwrap fadeup">
+			<div class="logo-wrap"><a href="index.html"><img src="common/images/logo-white.png" alt="Chihiro Tewhana"></a></div>
+			<nav>
+				<a href="#" onclick="return false;" class="burger"><i></i></a>
+				<ul class="menu">
+					<li><a href="index.html" class="top-line">Works.</a></li>
+					<li><a href="about/about.html">About.</a></li>
+					<li><a href="chihirotewhana/creatingsites.html#service">Services.</a></li>
+					<li><a href="about/about.html#contact-page">
+						<div class="mailbg">
+							<div class="icon-wrap">
+								<img src="common/images/icon-mail.png" alt="email">
+							</div>
+							<div class="sp_visible">Contact.</div>
+						</div></a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+	</header>
+	<main class="scroll-container">
+		<section id="top" class="s1 top-section">
+			<div class="icon-background">
+				<div class="top-title-over bg-icon">
+					<h1 id="top-h1">Chihiro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tewhana</h1>
+					<div class="info-button fadeup"><a href="chihirotewhana/creatingsites.html"><h2>ポートフォリオについて詳細をみる</h2></a></div>
+				</div>
+			</div>
+			<Div class="scrolldown" style="bottom: 25px; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></Div>
+            <Div class="scrolldown" style="bottom: 40px; animation: scrolldown 1.2s ease-in-out infinite;"></Div>
+		</section>
+		<section class="s2 top-section">
+			<div class="top-title-over">
+				<h1>WildGardening</h1>
+				<div class="info-button fadeup"><a href="wildgardening/gardening.html"><h2>ガーデニングサイトの詳細をみる</h2></a></div>
+			</div>
+		</section>
+		<section class="s3 top-section">
+			<div class="top-title-over">
+				<h1>Y.I.U</h1>
+				<div class="info-button fadeup"><a href="yiu/university.html"><h2>大学サイトの詳細をみる</h2></a></div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<small>Copyright &copy; 2022tewhana</small>
+	</footer>
+	<script src="common/js/observer.js"></script>
+</body>
+</html>

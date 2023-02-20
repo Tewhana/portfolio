@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devive-width initial-scale=1.0;">
+<link rel="stylesheet" href="../common/css/style_pc.css">
+<link rel="stylesheet" href="../common/css/style_sp.css">
+<link rel="stylesheet" href="../common/css/reset.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".burger").click(function() {
+    		$(this).toggleClass('active');
+    		$("ul.menu li").slideToggle('fast');
+		});
+	});
+
+	$(window).resize(function() {
+    	if ($(window).width() > 937) {
+        	$('ul.menu li').removeAttr('style');
+    	};
+	});
+</script>
+<title>Chihiro.Gardening</title>
+</head>
+<body>
+	<header>
+		<div class="index headwrap fadeup">
+			<div class="logo-wrap"><a href="../index.html"><img src="../common/images/logo-white.png" alt="Chihiro Tewhana"></a></div>
+			<nav>
+				<a href="#" onclick="return false;" class="burger"><i></i></a>
+				<ul class="menu">
+					<li><a href="../index.html" class="top-line">Works.</a></li>
+					<li><a href="../about/about.html">About.</a></li>
+					<li><a href="../chihirotewhana/creatingsites.html#service">Services.</a></li>
+					<li><a href="../about/about.html#contact-page">
+						<div class="mailbg">
+							<div class="icon-wrap">
+								<img src="../common/images/icon-mail.png" alt="email">
+							</div>
+							<div class="sp_visible">Contact.</div>
+						</div></a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+	</header>
+	<main>
+		<div class="section-wrap sp-bg">
+			<section class="info-bg">
+				<div class="title-over fadeup">
+					<h1>WildGardening</h1>
+				</div>
+				<div class="info-main info-top fadeup">
+					<p>レスポンシブ - Gardening Website Logo :</p>
+					<div class="logo-frame"><img src="images/logo.png" alt="WildGardening"></div>
+				</div>
+				<div class="info-main info-bottom">
+					<div class="info-left fadeup">
+						<dl>
+							<div id="plan">
+								<dt>Plan 計画 :</dt><dd>2 week</dd>
+							</div>
+							<div>
+								<dt>Design デザイン :</dt><dd>1 week</dd>
+								<dt>Code コーディング :</dt><dd>2 week</dd>
+							</div>
+						</dl>
+					</div>
+					<div class="info-right fadeup">
+						<dl>
+							<div>
+								<dt>Language 使用言語 :</dt><dd>HTML/CSS/JavaScript/PHP</dd>
+							</div>
+							<div>
+								<dt>Tools 使用ツール :</dt><dd>Illustrator/Photoshop/Dreamweaver</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+				<div class="bg-icon info fadeup">
+					<img src="images/bgicon-wg.png" alt="写真">
+				</div>
+			</section>
+			<div class="scrolldown-wrap">
+				<div class="scrolldown" style="position: absolute; bottom: 25px; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></div>
+           		<div class="scrolldown" style="position: absolute; bottom: 40px; animation: scrolldown 1.2s ease-in-out infinite;"></div>
+			</div>
+		</div>
+		<section class="info-imp">
+			<div class="content-wrap">
+				<div class="content fadeup">
+					<h2>Concept コンセプト :</h2>
+					<p>エコなガーデンデザイン、ガーデンメンテナンス、エコガーデンデザインの実施などのサービス利用につなげる。具体的にはWeb上からサービス利用の依頼、お問い合わせをしてもらう。</p>
+				</div>
+				<div class="content fadeup">
+					<h2>Target ターゲットユーザー :</h2>
+					<p>30〜６0代の地域エコに興味がある家保持者（庭もち）、エコガーデンを利用したい公共施設・ビジネス、エコロジーに興味がある、自給自足をしたい。</p>
+				</div>
+				<div class="content fadeup">
+					<h2>Issue 課題 :</h2>
+					<p>ウェブサイトをGoogleSitesで制作、公表していたが、予約フォームがGoogleFormのみで細かな情報や依頼書を用意できないため個人のウェブサイトを制作したい。予約、お問い合わせ、依頼を個々に精密な情報を書き込めるフォームづくり。それを利用していただく上での重要な情報をサイトに掲載。</p>
+				</div>
+				<div class="link-button fadeup">
+					<div class="pages">All Pages 全てのページを制作</div>
+					<a href="http://my.internetacademy.jp/~a31910061/WildGarden/index.html" target="_blank"><p>ガーデニングサイトへ訪れる</p></a>
+				</div>
+			</div>
+			<div class="page-wrap">
+				<div class="img-wrap">
+					<img src="images/wildgardenpage.png" alt="website page">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="s3">
+			<div class="title-over title-over-foot">
+				<div>
+					<hgroup class="fadeup">
+						<h1>Y.I.U</h1>
+						<h1 class="animate-line">NEXT PROJECT</h1>
+					</hgroup>
+					<div class="info-button fadeup"><a href="../yiu/university.html"><h2>次の作品についてみる</h2></a></div>
+				</div>
+			</div>
+			<div class="footbutton fadeup">
+				<div class="mail-button"><a href="../about/about.html#contact-page">
+					<div class="button-wrap">
+						<div class="icon-wrap">
+							<img src="../common/images/icon-mail.png" alt="email">
+						</div>
+					</div>
+					<div class="contact">お問い合わせ</div></a>
+				</div>
+				<div class="about-button"><a href="../about/about.html">
+					<div class="button-wrap">
+						<div class="about-icon">
+							<img src="../common/images/profileicon.png" alt="about">
+						</div>
+					</div>
+					<div class="prof">プロフィール</div></a>
+				</div>
+				<div class="sns-button"><a href="https://twitter.com/whana_webdesign" target="_blank">
+					<img src="../common/images/icon-twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+		</div>
+		<small>Copyright &copy; 2022tewhana</small>
+	</footer>
+	<script src="../common/js/vanilla-back-to-top.min.js"></script>
+	<script>
+	addBackToTop({backgroundColor: '#353535'})
+	const hover = document.getElementById('back-to-top')
+	hover.addEventListener('mouseover',function(){
+		hover.style.backgroundColor = 'grey';
+	});
+	hover.addEventListener('mouseleave',function(){
+		hover.style.backgroundColor = '#353535';
+	});
+	</script>
+	<script src="../common/js/observer.js"></script>
+</body>
+</html>

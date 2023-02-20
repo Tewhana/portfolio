@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devive-width initial-scale=1.0;">
+<link rel="stylesheet" href="../common/css/style_pc.css">
+<link rel="stylesheet" href="../common/css/style_sp.css">
+<link rel="stylesheet" href="../common/css/reset.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".burger").click(function() {
+    		$(this).toggleClass('active');
+    		$("ul.menu li").slideToggle('fast');
+		});
+	});
+
+	$(window).resize(function() {
+    	if ($(window).width() > 937) {
+        	$('ul.menu li').removeAttr('style');
+    	};
+	});
+</script>
+<title>Chihiro.YIU</title>
+</head>
+
+<body>
+	<header>
+		<div class="index headwrap fadeup">
+			<div class="logo-wrap"><a href="../index.html"><img src="../common/images/logo-white.png" alt="Chihiro Tewhana"></a></div>
+			<nav>
+				<a href="#" onclick="return false;" class="burger"><i></i></a>
+				<ul class="menu">
+					<li><a href="../index.html" class="top-line">Works.</a></li>
+					<li><a href="../about/about.html">About.</a></li>
+					<li><a href="../chihirotewhana/creatingsites.html#service">Services.</a></li>
+					<li><a href="../about/about.html#contact-page">
+						<div class="mailbg">
+							<div class="icon-wrap">
+								<img src="../common/images/icon-mail.png" alt="email">
+							</div>
+							<div class="sp_visible">Contact.</div>
+						</div></a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+	</header>
+	<main>
+		<div class="section-wrap sp-bg">
+			<section class="info-bg">
+				<div class="title-over">
+					<h1>Yamato International University</h1>
+				</div>
+				<div class="info-main info-top fadeup">
+					<p>レスポンシブ - University Website Logo :</p>
+					<div class="logo-frame"><img src="images/logo.png" alt="大和国際大学"></div>
+				</div>
+				<div class="info-main info-bottom fadeup">
+					<div class="info-left">
+						<dl>
+							<div>
+								<dt>Plan 計画 :</dt><dd>1 week</dd>
+							</div>
+							<div>
+								<dt>Design デザイン :</dt><dd>1 week</dd>
+							<dt>Code コーディング :</dt><dd>2 week</dd>
+							</div>
+						</dl>
+					</div>
+					<div class="info-right">
+						<dl>
+							<div>
+								<dt>Language 使用言語 :</dt><dd>HTML/CSS/JavaScript/PHP</dd>
+							</div>
+							<div>
+								<dt>Tools 使用ツール :</dt><dd>Illustrator/Photoshop/Dreamweaver</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+				<div class="bg-icon info fadeup">
+					<img src="images/bgicon-yiu.png" alt="写真">
+				</div>
+			</section>
+			<div class="scrolldown-wrap">
+				<div class="scrolldown" style="position: absolute; bottom: 25px; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></div>
+           		<div class="scrolldown" style="position: absolute; bottom: 40px; animation: scrolldown 1.2s ease-in-out infinite;"></div>
+			</div>
+		</div>
+		<section class="info-imp">
+			<div class="content-wrap">
+				<div class="content fadeup">
+					<h2>Concept コンセプト :</h2>
+					<p>本校の大学受験、見学、留学プログラムなどのサービス利用につなげる。具体的にはWeb上からサービス利用の資料請求、お問い合わせをしてもらう。</p>
+				</div>
+				<div class="content fadeup">
+					<h2>Target ターゲットユーザー :</h2>
+					<p>17~28歳の受験生、在学生、卒業生、30~70代の保護者、子供のいる家庭、高等学校教員。</p>
+				</div>
+				<div class="content fadeup">
+					<h2>Issue 課題 :</h2>
+					<p>大学のブランディングを重要視するため、そのコンテンツをわかりやすく表示させる。サイト訪問者の目的に沿ったページにすぐ移動できるよう、グローバルナビの見やすさ改善。資料請求やお問い合わせをすぐできるようボタンを設置。</p>
+				</div>
+				<div class="link-button fadeup">
+					<div class="pages">Top Page トップページ・Contact Page お問い合わせページ</div>
+					<a href="http://my.internetacademy.jp/~a31910061/YamatoInternationalUniversity/index.html" target="_blank"><p>大学サイトへ訪れる</p></a>
+				</div>
+			</div>
+			<div class="page-wrap">
+				<div class="img-wrap">
+					<img src="images/yiupage.png" alt="website page">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="s1">
+			<div class="title-over title-over-foot">
+				<div>
+					<hgroup>
+						<h1>ChihiroTewhana</h1>
+						<h1 class="animate-line  fadeup">NEXT PROJECT</h1>
+					</hgroup>
+					<div class="info-button fadeup"><a href="../chihirotewhana/creatingsites.html"><h2>作品制作についてみる</h2></a></div>
+				</div>
+			</div>
+			<div class="footbutton fadeup">
+				<div class="mail-button"><a href="../about/about.html#contact-page">
+					<div class="button-wrap">
+						<div class="icon-wrap">
+							<img src="../common/images/icon-mail.png" alt="email">
+						</div>
+					</div>
+					<div class="contact">お問い合わせ</div></a>
+				</div>
+				<div class="about-button"><a href="../about/about.html">
+					<div class="button-wrap">
+						<div class="about-icon">
+							<img src="../common/images/profileicon.png" alt="about">
+						</div>
+					</div>
+					<div class="prof">プロフィール</div></a>
+				</div>
+				<div class="sns-button"><a href="https://twitter.com/whana_webdesign" target="_blank">
+					<img src="../common/images/icon-twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+		</div>
+		<small>Copyright &copy; 2022tewhana</small>
+	</footer>
+	<script src="../common/js/vanilla-back-to-top.min.js"></script>
+	<script>
+	addBackToTop({backgroundColor: '#353535'})
+	const hover = document.getElementById('back-to-top')
+	hover.addEventListener('mouseover',function(){
+		hover.style.backgroundColor = 'grey';
+	});
+	hover.addEventListener('mouseleave',function(){
+		hover.style.backgroundColor = '#353535';
+	});
+	</script>
+	<script src="../common/js/observer.js"></script>
+</body>
+</html>

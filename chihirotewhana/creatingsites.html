@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devive-width initial-scale=1.0;">
+<link rel="stylesheet" href="../common/css/style_pc.css">
+<link rel="stylesheet" href="../common/css/style_sp.css">
+<link rel="stylesheet" href="../common/css/reset.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".burger").click(function() {
+    		$(this).toggleClass('active');
+    		$("ul.menu li").slideToggle('fast');
+		});
+	});
+
+	$(window).resize(function() {
+    	if ($(window).width() > 937) {
+        	$('ul.menu li').removeAttr('style');
+    	};
+	});
+</script>
+<title>Chihiro.Process</title>
+</head>
+
+<body>
+	<header>
+		<div class="index headwrap fadeup">
+			<div class="logo-wrap"><a href="../index.html"><img src="../common/images/logo-white.png" alt="Chihiro Tewhana"></a></div>
+			<nav>
+				<a href="#" onclick="return false;" class="burger"><i></i></a>
+				<ul class="menu">
+					<li><a href="../index.html" class="top-line">Works.</a></li>
+					<li><a href="../about/about.html">About.</a></li>
+					<li><a href="../chihirotewhana/creatingsites.html#service">Services.</a></li>
+					<li><a href="../about/about.html#contact-page">
+						<div class="mailbg">
+							<div class="icon-wrap">
+								<img src="../common/images/icon-mail.png" alt="email">
+							</div>
+							<div class="sp_visible">Contact.</div>
+						</div></a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+	</header>
+	<main>
+		<div class="section-wrap sp-bg">
+			<section class="info-bg">
+				<div class="title-over">
+					<h1>ChihiroTewhana</h1>
+				</div>
+				<div class="info-main info-top fadeup">
+					<p>Illustraterでのロゴやイラスト作成をしています。</p>
+					<a href="../about/about.html#illust" target="_blank"><div class="others-button">イラスト等を見る</div></a>
+				</div>
+				<div class="info-main info-bottom">
+					<div class="info-left fadeup">
+						<div class="leftfloat">
+							<div>
+								<h3>サイト制作の大まかな流れ</h3>
+							</div>
+							<div>
+								<p>① Plan 企画</p>
+							</div>
+							<div>
+								<p>② Design デザイン</p>
+							</div>
+							<div>
+								<p>③ Code コーディング</p>
+							</div>
+						</div>
+					</div>
+					<div class="info-right fadeup">
+						<div class="rightfloat">
+							<div><h3>主な使用言語やツール</h3></div>
+							<div>
+								<p>HTML/CSS/JavaScript/PHP</p>
+							</div>
+							<div>
+								<p>Illustrator/Photoshop/Dreamweaver</p>
+							</div>
+							<div>
+								<p>VisualStudioCode/Wordpress</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-icon info fadeup">
+					<img src="images/bgicon-port.png" alt="写真">
+				</div>
+			</section>
+			<div class="scrolldown-wrap">
+				<div class="scrolldown" style="position: absolute; bottom: 25px; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></div>
+           		<div class="scrolldown" style="position: absolute; bottom: 40px; animation: scrolldown 1.2s ease-in-out infinite;"></div>
+			</div>
+		</div>
+		<div class="loop--slider--style">
+			<div class="loop--slide--track--style">
+				<div class="loop--slide--style"><img src="images/stylescape.png" width="1004" alt="style guide"></div>
+				<div class="loop--slide--style"><img src="images/stylescape.png" width="1004" alt="style guide"></div>
+				<div class="loop--slide--style"><img src="images/stylescape.png" width="1004" alt="style guide"></div>
+				<div class="loop--slide--style"><img src="images/stylescape.png" width="1004" alt="style guide"></div>
+			</div>
+		</div>
+		<section id="service" class="info-imp">
+			<div class="content-wrap">
+				<div class="content fadeup">
+					<h2>制作の企画 :</h2>
+					<p>お客様とのヒアリングを行い、サイトのコンセプト（どのようなテーマにするか）や、ターゲットユーザー（年代や性別、細かな特徴を含めた誰に向けたサイトにしたいか）、そして解決すべき課題と目的を明確にします。</p>
+				</div>
+				<div class="content fadeup">
+					<h2>デザインの決定 :</h2>
+					<p>スタイルガイド（上の画像参考）でどのような色合い・フォント・デザイン等を使うか、お客様と確認します。その後ワイヤーフレーム（ウェブサイトの大まかな骨組み）とデザインカンプ（サイト全体のデザインが分かるもの）を制作します。</p>
+				</div>
+				<div class="content fadeup">
+					<h2>動きを考慮した企画とコーディング :</h2>
+					<p>デザインカンプを元にホバーアニメーションや動き、モーションを決めた上でコーディングします。</p>
+				</div>
+				<div class="content fadeup">
+					<h2>テスト :</h2>
+					<p>サイトを運営した後、Googleのツールを元にウェブサイトのアクセス数・コンバージョン数・ヒートマップを記録します。ユーザーのサイトでの動きを確認し、ウェブサイトの改善またはマーケティングに活かします。</p>
+				</div>
+			</div>
+			<div class="page-wrap">
+				<div class="img-wrap">
+					<img src="images/indexwf.JPG" alt="top wireframe">
+					<img src="images/subpagewf.JPG" alt="sub wireframe">
+					<div style="text-align: center; font-size: 11px;">↑wireframe　↓design</div>
+					<img src="images/indexpage.png" alt="top design">
+					<img src="images/subpage.png" alt="sub design">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="s2">
+			<div class="title-over title-over-foot">
+				<div>
+					<hgroup>
+						<h1>Wild Gardening</h1>
+						<h1 class="animate-line fadeup">NEXT PROJECT</h1>
+					</hgroup>
+					<div class="info-button fadeup"><a href="../wildgardening/gardening.html">
+						<h2>ガーデニングサイトについてみる</h2></a>
+					</div>
+				</div>
+			</div>
+			<div class="footbutton fadeup">
+				<div class="mail-button"><a href="../about/about.html#contact-page">
+					<div class="button-wrap">
+						<div class="icon-wrap">
+							<img src="../common/images/icon-mail.png" alt="email">
+						</div>
+					</div>
+					<div class="contact">お問い合わせ</div></a>
+				</div>
+				<div class="about-button"><a href="../about/about.html">
+					<div class="button-wrap">
+						<div class="about-icon">
+							<img src="../common/images/profileicon.png" alt="about">
+						</div>
+					</div>
+					<div class="prof">プロフィール</div></a>
+				</div>
+				<div class="sns-button"><a href="https://twitter.com/whana_webdesign" target="_blank">
+					<img src="../common/images/icon-twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+		</div>
+		<small>Copyright &copy; 2022tewhana</small>
+	</footer>
+	<script src="../common/js/vanilla-back-to-top.min.js"></script>
+	<script>
+	addBackToTop({backgroundColor: '#353535'})
+	const hover = document.getElementById('back-to-top')
+	hover.addEventListener('mouseover',function(){
+		hover.style.backgroundColor = 'grey';
+	});
+	hover.addEventListener('mouseleave',function(){
+		hover.style.backgroundColor = '#353535';
+	});
+	</script>
+	<script src="../common/js/observer.js"></script>
+</body>
+</html>

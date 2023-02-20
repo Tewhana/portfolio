@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devive-width initial-scale=1.0;">
+<link rel="stylesheet" href="../common/css/style_pc.css">
+<link rel="stylesheet" href="../common/css/style_sp.css">
+<link rel="stylesheet" href="../common/css/reset.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".burger").click(function() {
+    		$(this).toggleClass('active');
+    		$("ul.menu li").slideToggle('fast');
+		});
+	});
+
+	$(window).resize(function() {
+    	if ($(window).width() > 937) {
+        	$('ul.menu li').removeAttr('style');
+    	};
+	});
+</script>
+<title>Chihiro.About</title>
+</head>
+
+<body>
+	<header>
+		<div class="index headwrap fadeup">
+			<div class="logo-wrap"><a href="../index.html"><img src="../common/images/logo-white.png" alt="Chihiro Tewhana"></a></div>
+			<nav>
+				<a href="#" onclick="return false;" class="burger"><i></i></a>
+				<ul class="menu">
+					<li><a href="../index.html" class="top-line">Works.</a></li>
+					<li><a href="#">About.</a></li>
+					<li><a href="../chihirotewhana/creatingsites.html#service">Services.</a></li>
+					<li><a href="../about/about.html#contact-page">
+						<div class="mailbg">
+							<div class="icon-wrap">
+								<img src="../common/images/icon-mail.png" alt="email">
+							</div>
+							<div class="sp_visible">Contact.</div>
+						</div></a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+	</header>
+	<main>
+		<section class="profile">
+			<div class="bg-icon">
+				<div class="left"><img src="images/profpic.png" alt="写真"></div>
+			</div>
+			<div class="prof-wrapper">
+				<div class="title-over">
+					<h1>ChihiroTewhana</h1>
+					<div class="row-wrap skill fadeup">
+						<ul class="skills-top">
+							<li><a href="https://ja.wikipedia.org/wiki/HTML5"  class="skillicons">
+								<img src="images/html5icon.png" alt="icon">Html5</a>
+							</li>
+							<li><a href="https://ja.wikipedia.org/wiki/Cascading_Style_Sheets#Cascading_Style_Sheets,_level_3_(CSS3)" target="_blank" class="skillicons">
+								<img src="images/css3icon.png" alt="icon">Css3</a>
+							</li>
+							<li><a href="https://ja.wikipedia.org/wiki/JavaScript" target="_blank" class="skillicons">
+								<img src="images/jsicon.png" alt="icon">JavaScript</a>
+							</li>
+							<li><a href="https://ja.wikipedia.org/wiki/PHP_(プログラミング言語)" target="_blank" class="skillicons">
+								<img src="images/phpicon.png" alt="icon">PHP</a>
+							</li>
+						</ul>
+						<ul class="skills-bot">
+							<li><a href="https://ja.wikipedia.org/wiki/Adobe_Photoshop" target="_blank" class="skillicons">
+								<img src="images/psicon.png" alt="icon">Photoshop</a>
+							</li>
+							<li><a href="https://ja.wikipedia.org/wiki/Adobe_Illustrator" target="_blank" class="skillicons">
+								<img src="images/aiicon.png" alt="icon">Illustrator</a>
+							</li>
+							<li><a href="https://ja.wikipedia.org/wiki/Adobe_Dreamweaver" target="_blank" class="skillicons">
+								<img src="images/dwicon.png" alt="icon">Dreamweaver</a>
+							</li>
+							<li><a href="https://ja.wikipedia.org/wiki/Visual_Studio_Code" target="_blank" class="skillicons">
+								<img src="images/vscodeicon.png" alt="icon">VS Code</a>
+							</li>
+						</ul>
+					</div>
+					<div class="row-wrap prof">
+						<div class="dl-wrap dl-1 fadeup">
+							<dl>
+								<div class="proflist"><dt>Name</dt><dd class="prof-width">中野千尋テファナ</dd></div>
+								<div class="proflist"><dt>Birth</dt><dd class="prof-width">1997年2月7日</dd></div>
+								<div class="proflist"><dt>Area</dt><dd class="prof-width">東京</dd></div>
+								<div class="proflist"><dt>Vision</dt><dd class="prof-width">Minimalism</dd></div>
+								<div class="proflist"><dt></dt><dd class="prof-width">ユニバーサルデザイン</dd></div>
+							</dl>
+						</div>
+						<div class="dl-wrap dl-2 fadeup">
+							<dl>
+								<div><dt>Concept</dt><dd><br></dd></div>
+								<div><dt></dt><dd>日本と海外で暮らした経験を活かした国際的かつ多様性あるデザイン。サイトが伝えるべきコンセプトを強調するための配置や色を配慮。<br>サイトの目的を達成することを第一に、サイトがニーズに合うよう使いやすく・見やすくアップデートしていくことを第二に考え、洗練します。</dd></div>
+							</dl>
+						</div>
+					</div>
+					<div class="design-button  pc-visible fadeup"><a href="../chihirotewhana/creatingsites.html"><h2>ウェブ制作について詳しくみる</h2></a></div>
+				</div>
+			</div>
+		</section>
+		<div class="scrolldown-wrap">
+			<div class="scrolldown" style="position: absolute; bottom: 10px; animation: scrolldown 1.2s ease-in-out infinite 0.15s;"></div>
+           		<div class="scrolldown" style="position: absolute; bottom: 25px; animation: scrolldown 1.2s ease-in-out infinite;"></div>
+		</div>
+		<section class="s4">
+			<div class="detail-center">
+				<div class="detail-wrap">
+					<div class="left-img"><img src="images/img1.png" alt="paint"></div>
+					<div class="right-info fadeup">
+						<h2>デザインに出会うきっかけ</h2>
+						<p>小学5年生の時に運動会実行委員としてスローガンを考え、それを踏まえたポスターのデザインを描く機会がありました。
+							初めてデザインの概念の一つであるスローガンを「わかりやすく伝える」絵を描くことになり、色合いや文字を強調する方法を学びました。
+							この時をきっかけに職業体験用のプレゼンポスター、クラス共通の文化祭Tシャツデザイン、卒業文集のイラストなど様々なデザインに
+							触れ合える機会に積極的に参加しました。</p>
+					</div>
+				</div>
+				<div class="detail-wrap">
+					<div class="left-img"><img src="images/img2.png" alt="paint"></div>
+					<div class="right-info fadeup">
+						<h2>デザインが大切な理由</h2>
+						<p>日本と海外を何度も転校したこともあり、バイリンガルとしてデザインはとてもわかりやすい伝達手段だと感じています。思考するときは言葉ではなく色やイメージを思い浮かべ
+							それを言葉に変換することを日頃から行なっているため、言葉がなくともメッセージが伝わる芸術的作品やデザインは私にとって大切なものです。デザインをする時、その大切さを踏まえ
+							誰にでも分かるデザインを作ることで必要とする人にメッセージを届けることができます。</p>
+					</div>
+				</div>
+				<div class="detail-wrap">
+					<div class="left-img"><img src="images/img3.png" alt="paint"></div>
+					<div class="right-info fadeup">
+						<h2>経験から気をつけたいこと</h2>
+						<p>母がウェブサイトで必要な情報を探すのに苦労しているところを何度か助けることがありました。情報が多く載っておりブラウズバックを繰り返しながらようやくみつかりました。このような
+							ユーザーの経験を少しでも改善できないか、情報の整理、記載方法を考えたウェブサイトの制作を意識し、ユーザーとクライアントのニーズを両方気にしたデザインを制作しています。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="illust" class="other">
+			<h1>他の作品<span>配信用スタンプの依頼やカレンダーのデザイン等</span></h1>
+			<div class="loop--slider">
+				<div class="loop--slide--track">
+					<div class="badge"><img src="images/badge.png" width="500" alt="バッジ"></div>
+					<div class="emote"><img src="images/emote.png" width="500" alt="エモート"></div>
+					<div class="loop--slide"><img src="images/1.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/2.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/3.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/4.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/5.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/6.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/7.png" alt="カレンダー"></div>
+					<div class="loop--slide paper"><img src="images/paper1.jpg" alt="手書きカレンダー"></div>
+					<div class="loop--slide paper"><img src="images/paper2.jpg" alt="手書きカレンダー"></div>
+					<div class="loop--slide paper"><img src="images/paper3.jpg" alt="手書きカレンダー"></div>
+					<div class="loop--slide"><img src="images/pat1.png" alt="アイコン"></div>
+					<div class="loop--slide"><img src="images/pat2.png" alt="アイコン"></div>
+					<div class="badge"><img src="images/badge.png" width="500" alt="バッジ"></div>
+					<div class="emote"><img src="images/emote.png" width="500" alt="エモート"></div>
+					<div class="loop--slide"><img src="images/1.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/2.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/3.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/4.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/5.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/6.png" alt="カレンダー"></div>
+					<div class="loop--slide"><img src="images/7.png" alt="カレンダー"></div>
+					<div class="loop--slide paper"><img src="images/paper1.jpg" alt="手書きカレンダー"></div>
+					<div class="loop--slide paper"><img src="images/paper2.jpg" alt="手書きカレンダー"></div>
+					<div class="loop--slide paper"><img src="images/paper3.jpg" alt="手書きカレンダー"></div>
+					<div class="loop--slide"><img src="images/pat1.png" alt="アイコン"></div>
+					<div class="loop--slide"><img src="images/pat2.png" alt="アイコン"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="contact-page">
+		<div class="s1">
+			<div class="title-over title-over-foot">
+				<div>
+					<hgroup class="fadeup">
+						<h1>Contact me</h1>
+						<h1 class="animate-line address">tewhana @ gmail.com</h1>
+					</hgroup>
+					<div id="sendmail" class="fadeup"><a href="mailto:tewhana@gmail.com?subject=%E3%80%90%E3%82%A6%E3%82%A7%E3%83%96%E5%88%B6%E4%BD%9C%E3%81%AE%E4%BE%9D%E9%A0%BC%E3%80%81%E5%8F%88%E3%81%AF%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%80%91for%E4%B8%AD%E9%87%8E%E5%8D%83%E5%B0%8B&body=%E9%80%81%E4%BF%A1%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%81%AE%E5%86%85%E5%AE%B9%E3%81%AF%E3%81%93%E3%81%A1%E3%82%89%E3%81%AE%E4%B8%8B%E3%81%AB%E3%81%94%E8%A8%98%E8%BC%89%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0D%0A%E3%81%94%E4%BE%9D%E9%A0%BC%E3%81%AE%E5%A0%B4%E5%90%88%E3%81%AF%E3%81%93%E3%81%AE%E3%81%BE%E3%81%BE%E9%80%81%E4%BF%A1%E3%83%9C%E3%82%BF%E3%83%B3%E3%82%92%E6%8A%BC%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E6%8A%98%E3%82%8A%E8%BF%94%E3%81%97%E3%81%94%E9%80%A3%E7%B5%A1%E8%87%B4%E3%81%97%E3%81%BE%E3%81%99%E3%80%82">
+						<div class="innericon"><img src="../common/images/icon-mail.png" alt="email"></div>
+						<div><h2>メールを送る</h2></div></a>
+					</div>
+				</div>
+			</div>
+			<div class="info-button for-footer fadeup"><a href="../index.html"><h2>作品一覧へ戻る</h2></a></div>
+			<div class="footbutton fadeup">
+				<div class="sns-button">
+					<a href="https://twitter.com/whana_webdesign" target="_blank">
+					<img src="../common/images/icon-twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="../common/js/vanilla-back-to-top.min.js"></script>
+	<script>
+	addBackToTop({backgroundColor: '#353535'})
+	const hover = document.getElementById('back-to-top')
+	hover.addEventListener('mouseover',function(){
+		hover.style.backgroundColor = 'grey';
+	});
+	hover.addEventListener('mouseleave',function(){
+		hover.style.backgroundColor = '#353535';
+	});
+	</script>
+	<script src="../common/js/observer.js"></script>
+</body>
+</html>
